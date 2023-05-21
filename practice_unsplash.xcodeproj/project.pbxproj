@@ -14,6 +14,12 @@
 		D32E72012A1A439A00414915 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D32E72002A1A439A00414915 /* Assets.xcassets */; };
 		D32E72042A1A439A00414915 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D32E72022A1A439A00414915 /* LaunchScreen.storyboard */; };
 		D32E720D2A1A43DA00414915 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D32E720C2A1A43DA00414915 /* Alamofire */; };
+		D32E720F2A1A48E200414915 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32E720E2A1A48E200414915 /* Constants.swift */; };
+		D32E72122A1A538400414915 /* MyAlamofireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32E72112A1A538400414915 /* MyAlamofireManager.swift */; };
+		D32E72142A1A54EA00414915 /* BaseInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32E72132A1A54EA00414915 /* BaseInterceptor.swift */; };
+		D32E72162A1A5A7100414915 /* MyLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32E72152A1A5A7100414915 /* MyLogger.swift */; };
+		D32E72182A1A5B3000414915 /* MyApiStatusLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32E72172A1A5B3000414915 /* MyApiStatusLogger.swift */; };
+		D32E721A2A1A5BD400414915 /* MySearchLouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32E72192A1A5BD400414915 /* MySearchLouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +31,12 @@
 		D32E72002A1A439A00414915 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D32E72032A1A439A00414915 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D32E72052A1A439A00414915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D32E720E2A1A48E200414915 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D32E72112A1A538400414915 /* MyAlamofireManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAlamofireManager.swift; sourceTree = "<group>"; };
+		D32E72132A1A54EA00414915 /* BaseInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInterceptor.swift; sourceTree = "<group>"; };
+		D32E72152A1A5A7100414915 /* MyLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLogger.swift; sourceTree = "<group>"; };
+		D32E72172A1A5B3000414915 /* MyApiStatusLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApiStatusLogger.swift; sourceTree = "<group>"; };
+		D32E72192A1A5BD400414915 /* MySearchLouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySearchLouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 		D32E71F62A1A439800414915 /* practice_unsplash */ = {
 			isa = PBXGroup;
 			children = (
+				D32E72102A1A537100414915 /* API */,
 				D32E71F72A1A439800414915 /* AppDelegate.swift */,
 				D32E71F92A1A439800414915 /* SceneDelegate.swift */,
 				D32E71FB2A1A439800414915 /* ViewController.swift */,
@@ -65,8 +78,21 @@
 				D32E72002A1A439A00414915 /* Assets.xcassets */,
 				D32E72022A1A439A00414915 /* LaunchScreen.storyboard */,
 				D32E72052A1A439A00414915 /* Info.plist */,
+				D32E720E2A1A48E200414915 /* Constants.swift */,
 			);
 			path = practice_unsplash;
+			sourceTree = "<group>";
+		};
+		D32E72102A1A537100414915 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				D32E72112A1A538400414915 /* MyAlamofireManager.swift */,
+				D32E72152A1A5A7100414915 /* MyLogger.swift */,
+				D32E72132A1A54EA00414915 /* BaseInterceptor.swift */,
+				D32E72172A1A5B3000414915 /* MyApiStatusLogger.swift */,
+				D32E72192A1A5BD400414915 /* MySearchLouter.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +173,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D32E71FC2A1A439800414915 /* ViewController.swift in Sources */,
+				D32E721A2A1A5BD400414915 /* MySearchLouter.swift in Sources */,
 				D32E71F82A1A439800414915 /* AppDelegate.swift in Sources */,
+				D32E72142A1A54EA00414915 /* BaseInterceptor.swift in Sources */,
+				D32E72162A1A5A7100414915 /* MyLogger.swift in Sources */,
 				D32E71FA2A1A439800414915 /* SceneDelegate.swift in Sources */,
+				D32E720F2A1A48E200414915 /* Constants.swift in Sources */,
+				D32E72182A1A5B3000414915 /* MyApiStatusLogger.swift in Sources */,
+				D32E72122A1A538400414915 /* MyAlamofireManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
