@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
 
@@ -15,5 +16,16 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func onSerachBtnClicked(_ sender: UIButton) {
+            print(#fileID, #function, #line, "-  주석")
+        
+        let url: String =  "https://api.unsplash.com/search/photos?query=cat&client_id=G1Vlnn-OGktHeRJszyMjAHZDHUKRSU_YhIwOKpDmYpE"
+        
+        AF.request(url).response { response in
+            debugPrint(response)
+        }
+    }
+    
+    
 }
 
